@@ -1,0 +1,12 @@
+# Ignorar tudo por padrão
+*
+
+# Permitir arquivos essenciais para build
+!pom.xml
+!src/
+
+# Permitir artefatos do build
+!target/*-runner
+!target/*-runner.jar
+!target/lib/*
+!target/quarkus-app/*
