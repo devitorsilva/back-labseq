@@ -27,9 +27,9 @@ public class LabseqService {
             setDefaultCache(cacheService);
         }
 
-        if (cacheService.containsKey(number - 1)) {
+        if (cacheService.containsKey(number)) {
             labseqResponsetDTO.setError(null);
-            labseqResponsetDTO.setResult(cacheService.get(number - 1).toString());
+            labseqResponsetDTO.setResult(cacheService.get(number).toString());
             return labseqResponsetDTO;
         }
 
